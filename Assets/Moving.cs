@@ -10,8 +10,7 @@ public class Moving : MonoBehaviour {
     public PathMagic magic;
 	// Use this for initialization
 	void Start () {
-        // pathScript = path.GetComponent,
-
+       
        
 	}
 	
