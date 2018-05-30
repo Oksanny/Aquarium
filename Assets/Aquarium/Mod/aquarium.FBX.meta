@@ -9,7 +9,7 @@ labels:
 - Prop
 - Pub
 ModelImporter:
-  serializedVersion: 19
+  serializedVersion: 22
   fileIDToRecycleName:
     100000: //RootNode
     100002: aquarium_body
@@ -23,6 +23,14 @@ ModelImporter:
     100018: aquarium_rock
     100020: aquarium_seaweed
     100022: aquarium_food
+    100024: bottom
+    100026: earth
+    100028: filter
+    100030: main_glass
+    100032: roof2
+    100034: side_earth
+    100036: top_glass
+    100038: water1
     400000: //RootNode
     400002: aquarium_body
     400004: aquarium_deco
@@ -35,6 +43,14 @@ ModelImporter:
     400018: aquarium_rock
     400020: aquarium_seaweed
     400022: aquarium_food
+    400024: bottom
+    400026: earth
+    400028: filter
+    400030: main_glass
+    400032: roof2
+    400034: side_earth
+    400036: top_glass
+    400038: water1
     2300000: aquarium_body
     2300002: aquarium_deco
     2300004: aquarium_fish_01
@@ -46,6 +62,14 @@ ModelImporter:
     2300016: aquarium_rock
     2300018: aquarium_seaweed
     2300020: aquarium_food
+    2300022: bottom
+    2300024: earth
+    2300026: filter
+    2300028: main_glass
+    2300030: roof2
+    2300032: side_earth
+    2300034: top_glass
+    2300036: water1
     3300000: aquarium_body
     3300002: aquarium_deco
     3300004: aquarium_fish_01
@@ -57,6 +81,14 @@ ModelImporter:
     3300016: aquarium_rock
     3300018: aquarium_seaweed
     3300020: aquarium_food
+    3300022: bottom
+    3300024: earth
+    3300026: filter
+    3300028: main_glass
+    3300030: roof2
+    3300032: side_earth
+    3300034: top_glass
+    3300036: water1
     4300000: aquarium_body
     4300002: aquarium_ground
     4300004: aquarium_fish_01
@@ -68,27 +100,77 @@ ModelImporter:
     4300016: aquarium_fish_04
     4300018: aquarium_light
     4300020: aquarium_food
+    4300022: earth
+    4300024: side_earth
+    4300026: bottom
+    4300028: water1
+    4300030: roof2
+    4300032: filter
+    4300034: top_glass
+    4300036: main_glass
     9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aquarium_body_glass
+    second: {fileID: 2100000, guid: 955fe1f4ce4e44da6a06c4e1b20b6e6f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aquarium_body_metal
+    second: {fileID: 2100000, guid: f3166bdb644915f4e830435980c305d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aquarium_body_wood
+    second: {fileID: 2100000, guid: 75eafb3806cb1854dbabd36710a3ceed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aquarium_ground
+    second: {fileID: 2100000, guid: 8f579e31ea91e264fa07ece4da46074b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aquarium_ground_reflect
+    second: {fileID: 2100000, guid: 67fed22ce5244c5409fa0a07da6b6805, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 89a4e0071007a49bfba813ed8afcfcc8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: water
+    second: {fileID: 2100000, guid: 6f1188a4aaab94794b12ce4524209453, type: 2}
   materials:
     importMaterials: 1
     materialName: 1
     materialSearch: 0
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
-    resampleRotations: 1
+    resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
+    extraUserProperties: []
     clipAnimations: []
     isReadable: 1
   meshes:
@@ -96,13 +178,18 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    importVisibility: 0
     importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
@@ -112,9 +199,11 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 4
+    normalCalculationMode: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
+    serializedVersion: 2
     human: []
     skeleton: []
     armTwist: 0.5
@@ -125,7 +214,10 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1

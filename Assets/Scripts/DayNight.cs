@@ -19,7 +19,7 @@ public class DayNight : MonoBehaviour {
     public void Day()
     {
         
-        sideAquarium.color = new Color(0, 0.5372549f, 1f, 0.4980392f);
+        sideAquarium.color = new Color(0, 0.5372549f, 1f, 0.3058824f);
         water.color = new Color(0, 0, 0, 0);
         DayLight.SetActive(true);
         for (int i = 0; i < NightLights.Length; i++)
@@ -30,7 +30,7 @@ public class DayNight : MonoBehaviour {
     }
     public void Night()
     {
-        sideAquarium.color = new Color(0, 0.1004922f, 0.2641509f, 0.4980392f);
+        sideAquarium.color = new Color(0.08419366f, 0.2571645f, 0.4150943f, 0.6235294f);
         water.color = new Color(0, 0, 0, 0.3215686f);
 
         DayLight.SetActive(false);
