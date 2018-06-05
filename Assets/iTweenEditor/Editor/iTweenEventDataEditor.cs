@@ -38,7 +38,7 @@ public class iTweenEventDataEditor : Editor {
 	Dictionary<string, bool> propertiesEnabled = new Dictionary<string, bool>();
 	iTweenEvent.TweenType previousType;
 	
-	[MenuItem("Component/iTween/iTweenEvent")]
+	/*[MenuItem("Component/iTween/iTweenEvent")]
     static void AddiTweenEvent () {
 		if(Selection.activeGameObject != null) {
 			Selection.activeGameObject.AddComponent(typeof(iTweenEvent));
@@ -66,11 +66,12 @@ public class iTweenEventDataEditor : Editor {
 			EditorUtility.DisplayDialog("Can't move files", "Your files have already been moved", "Ok");
 		}
 	}
+	*/
 	
-	[MenuItem("Component/iTween/Donate to support the Visual Editor")]
-	static void Donate() {
-		Application.OpenURL("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WD3GQ6HHD257C");
-	}
+	//[MenuItem("Component/iTween/Donate to support the Visual Editor")]
+	//static void Donate() {
+	//	Application.OpenURL("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WD3GQ6HHD257C");
+	//}
 	
 	public void OnEnable() {
 		var evt = (iTweenEvent)target;

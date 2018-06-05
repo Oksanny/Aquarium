@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 8
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -39,7 +39,6 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
-  m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -55,10 +54,11 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 9
     m_Resolution: 1
     m_BakeResolution: 50
-    m_AtlasSize: 1024
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
     m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 0
@@ -144,7 +144,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: fd50d5c2ec76d48b1ab956db42ce77a6, type: 2}
   m_StaticBatchInfo:
@@ -294,7 +293,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: 0fb114a3749d74b2bbf35446c26df9bd, type: 2}
   m_StaticBatchInfo:
@@ -350,53 +348,143 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1095910385
-Prefab:
+--- !u!1 &1245460941
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4706853583093950, guid: ee8f19fbaba8a45429f6f048cc16f29c, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 9.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4706853583093950, guid: ee8f19fbaba8a45429f6f048cc16f29c, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 13.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4706853583093950, guid: ee8f19fbaba8a45429f6f048cc16f29c, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 3.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4706853583093950, guid: ee8f19fbaba8a45429f6f048cc16f29c, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4706853583093950, guid: ee8f19fbaba8a45429f6f048cc16f29c, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4706853583093950, guid: ee8f19fbaba8a45429f6f048cc16f29c, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4706853583093950, guid: ee8f19fbaba8a45429f6f048cc16f29c, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4706853583093950, guid: ee8f19fbaba8a45429f6f048cc16f29c, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114600039077802666, guid: ee8f19fbaba8a45429f6f048cc16f29c,
-        type: 2}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 508631338}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: ee8f19fbaba8a45429f6f048cc16f29c, type: 2}
-  m_IsPrefabParent: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1245460943}
+  - component: {fileID: 1245460942}
+  m_Layer: 0
+  m_Name: PathMagic Path
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1245460942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1245460941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9553121615fd34b3eb74d198e87f0e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathColor: {r: 1, g: 1, b: 0.022, a: 1}
+  waypoints:
+  - position: {x: 6.6809645, y: 6.29148, z: -15.41786}
+    rotation: {x: 0.00020149058, y: 278.0456, z: 132.99268}
+    lookAt: {fileID: 0}
+    inTangent: {x: 9.026236, y: 0, z: -1}
+    outTangent: {x: -9.026236, y: -0, z: 1}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 1
+    outVariation: 1
+    reached:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: -3.014467, y: 0.38782978, z: -4.619324}
+    rotation: {x: -0.00053545355, y: 358.63815, z: 4.07111e-13}
+    lookAt: {fileID: 0}
+    inTangent: {x: 0, y: 0, z: -7.496198}
+    outTangent: {x: -0, y: -0, z: 7.496198}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 1
+    outVariation: 1
+    reached:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: -19.236986, y: -0.09695721, z: 3.125042}
+    rotation: {x: 0.00053779094, y: 1.3402971, z: 1.221333e-12}
+    lookAt: {fileID: 0}
+    inTangent: {x: 0, y: 0, z: -3.3890457}
+    outTangent: {x: -0, y: -0, z: 3.3890457}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 1
+    outVariation: 1
+    reached:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: -3.3290477, y: -0.09695721, z: 12.838474}
+    rotation: {x: 86.85421, y: 1.9427165, z: 0.0000019446704}
+    lookAt: {fileID: 0}
+    inTangent: {x: -0, y: -0, z: -3.555111}
+    outTangent: {x: 0, y: 0, z: 3.555111}
+    symmetricTangents: 1
+    velocity: 0.8672663
+    inVariation: 1
+    outVariation: 1
+    reached:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: 20.508255, y: -0.09695721, z: 4.0736713}
+    rotation: {x: 11.036005, y: 178.71935, z: 0.000000013591558}
+    lookAt: {fileID: 0}
+    inTangent: {x: -0, y: -0, z: 5.3041325}
+    outTangent: {x: 0, y: 0, z: -5.3041325}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 1
+    outVariation: 1
+    reached:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  target: {fileID: 508631338}
+  disableOrientation: 0
+  globalLookAt: {fileID: 0}
+  globalFollowPath: 1
+  globalFollowPathBias: 0.001
+  updateMode: 0
+  loop: 1
+  autoStart: 1
+  velocityBias: 0.74
+  currentPos: 0.29173928
+  isPlaying: 0
+  waypointChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Jacovone.PathMagic+WaypointChangedEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  presampledPath: 0
+  samplesNum: 100
+  positionSamples: []
+  rotationSamples: []
+  velocitySamples: []
+  waypointSamples: 
+  samplesDistances: []
+  totalDistance: 0
+  updateTransform: 1
+--- !u!4 &1245460943
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1245460941}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 9.2, y: 13.1, z: 3.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1360495242
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,7 +568,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1360495242}
   m_LocalRotation: {x: 0.11302723, y: 0.55061394, z: -0.07556257, w: 0.8236137}
-  m_LocalPosition: {x: -21.954882, y: 22.9, z: 0.8719106}
+  m_LocalPosition: {x: -21.954882, y: 22.9, z: 0.871912}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -819,5 +907,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
