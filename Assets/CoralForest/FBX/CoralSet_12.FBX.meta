@@ -651,7 +651,97 @@ ModelImporter:
     4300254: Plane281
     4300256: Plane317
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Default
+    second: {fileID: 2100000, guid: 51b30ac8045612e4aa9b8be554f3413b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Defaultff
+    second: {fileID: 2100000, guid: 8e44321154322c04ea83facc3c8d5b3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 04 - Default
+    second: {fileID: 2100000, guid: fc0cc0e16b6677d49aef20c6e4a358e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 05 - Default
+    second: {fileID: 2100000, guid: 8a1056f850c9d2b4db318e839c6871fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 06 - Default
+    second: {fileID: 2100000, guid: f7b68f61b75b5b04e934a2c6c4df6ae2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 08 - Defaultd
+    second: {fileID: 2100000, guid: e1c489507909c9e4d876332b1e30a1fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 09 - Defaultv
+    second: {fileID: 2100000, guid: 484da4dc9a69242478dd75ca7f03e264, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 10 - Defaultf
+    second: {fileID: 2100000, guid: 0e6f5ee2b01c2aa4bbf3bcc1e50813e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 11 - Default
+    second: {fileID: 2100000, guid: afbfc56876fda5642b6463db5c792f55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 11 - Defaultf
+    second: {fileID: 2100000, guid: c313f982a3cf9bc4cafaafdc96af471a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 12 - Default
+    second: {fileID: 2100000, guid: e5950af4cc1fd274581900b37a42b401, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 15 - Default
+    second: {fileID: 2100000, guid: 9dc5e036baab53345a3b15b9ae109f3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 17 - Default
+    second: {fileID: 2100000, guid: 5f7c9e197bd29724ca353575a012e66c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 17 - Defaultv
+    second: {fileID: 2100000, guid: 83ecc5ca39464a44893390fae9640790, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 18 - Default
+    second: {fileID: 2100000, guid: 09df851079be0824e8c1dae64c79611d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 19 - Defaultsdf
+    second: {fileID: 2100000, guid: d4fd30d741694a64dae2a20db3579873, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 20 - Defaultsad
+    second: {fileID: 2100000, guid: c8d22f7d2eb616c46ba9824c79db7e1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 24 - Defaultd
+    second: {fileID: 2100000, guid: d81cd349847801448914ec2075dec644, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -707,7 +797,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 4
     normalCalculationMode: 0
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2

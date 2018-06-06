@@ -421,7 +421,112 @@ ModelImporter:
     4300162: Plane122
     4300164: Plane004
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Defaults
+    second: {fileID: 2100000, guid: 2298ea95809b7bb4e9095a4998c15e58, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Default
+    second: {fileID: 2100000, guid: 51b30ac8045612e4aa9b8be554f3413b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Defaultff
+    second: {fileID: 2100000, guid: 8e44321154322c04ea83facc3c8d5b3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 04 - Default
+    second: {fileID: 2100000, guid: fc0cc0e16b6677d49aef20c6e4a358e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 05 - Default
+    second: {fileID: 2100000, guid: 8a1056f850c9d2b4db318e839c6871fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 07 - Defssault
+    second: {fileID: 2100000, guid: 9b9b6044ba3fd1d459f0e975a45c7568, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 08 - Default
+    second: {fileID: 2100000, guid: f6d243068d3087147b1980136609b746, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 09 - Default
+    second: {fileID: 2100000, guid: ff96f82f43bbfea4d839e439adb3ad59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 10 - Default
+    second: {fileID: 2100000, guid: 1809ae1c4027f4a47b19d9297629d805, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 13 - Defafult
+    second: {fileID: 2100000, guid: 715ff4cf220b3f54f821bd1c4bd5c452, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 13 - Defafultff
+    second: {fileID: 2100000, guid: 8febb9f38a491394ab460e40d2a99ae7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 15 - Default
+    second: {fileID: 2100000, guid: 9dc5e036baab53345a3b15b9ae109f3c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 16 - Defaults
+    second: {fileID: 2100000, guid: d779dbcb4a54bc14b8f6782feb6e5e42, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 18 - Defaultdd
+    second: {fileID: 2100000, guid: 906c9e9ef5e94194a81079dd5beb8ba0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 19 - Default
+    second: {fileID: 2100000, guid: 104e0fd0437f260428c7f759e0fddc84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 19 - Defaultsdf
+    second: {fileID: 2100000, guid: d4fd30d741694a64dae2a20db3579873, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 20 - Defaultf
+    second: {fileID: 2100000, guid: bfee0aaf76ce64c4d91746b1ca280a27, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 20 - Defaultsad
+    second: {fileID: 2100000, guid: c8d22f7d2eb616c46ba9824c79db7e1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 22 - Deffault
+    second: {fileID: 2100000, guid: d12535d082764584dbfaef19ab97bad7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 23 - Default
+    second: {fileID: 2100000, guid: d2828360e395a9549bdae247fa336e0c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 24 - Default
+    second: {fileID: 2100000, guid: 9a82baebc87f06749ae329e88de386a3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -477,7 +582,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 4
     normalCalculationMode: 0
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2

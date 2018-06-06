@@ -296,7 +296,12 @@ ModelImporter:
     4300112: Object092
     4300114: Object093
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 22 - Defd
+    second: {fileID: 2100000, guid: a108eed1f27480645b7e789b109abaec, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -352,7 +357,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 4
     normalCalculationMode: 0
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2

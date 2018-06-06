@@ -166,7 +166,42 @@ ModelImporter:
     4300060: Sphere065
     4300062: Sphere066
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Defaultff
+    second: {fileID: 2100000, guid: 8e44321154322c04ea83facc3c8d5b3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 05 - Defaultf
+    second: {fileID: 2100000, guid: 5951bd13ac631e84f9d137f85e21f1cc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 16 - Default
+    second: {fileID: 2100000, guid: 5c6bfa5460b137343b588465b610dfbd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 18 - Defaultdd
+    second: {fileID: 2100000, guid: 906c9e9ef5e94194a81079dd5beb8ba0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 21 - Defaultf
+    second: {fileID: 2100000, guid: f699f5baf9d0ebf4cb462067e9d8524c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 22 - Deffault
+    second: {fileID: 2100000, guid: d12535d082764584dbfaef19ab97bad7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 23 - Defaultf
+    second: {fileID: 2100000, guid: ef5ca45867485354f9df1dae8c056792, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -222,7 +257,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 4
     normalCalculationMode: 0
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2

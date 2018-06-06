@@ -171,7 +171,27 @@ ModelImporter:
     4300062: Object112
     4300064: Object084
     9500000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 03 - Defaultff
+    second: {fileID: 2100000, guid: 8e44321154322c04ea83facc3c8d5b3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 10 - Defaultf
+    second: {fileID: 2100000, guid: 0e6f5ee2b01c2aa4bbf3bcc1e50813e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 20 - Defaultsad
+    second: {fileID: 2100000, guid: c8d22f7d2eb616c46ba9824c79db7e1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 24 - Defaultd
+    second: {fileID: 2100000, guid: d81cd349847801448914ec2075dec644, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -227,7 +247,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 4
     normalCalculationMode: 0
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
