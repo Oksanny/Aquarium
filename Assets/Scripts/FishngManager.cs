@@ -10,6 +10,7 @@ public class FishngManager : MonoBehaviour
     public List<PathMagic> FishingPaths;
     public PathMagic CurrentPath;
     public GameObject Hook;
+    public GameObject Fishrod;
     public GameObject PanelUI;
     private bool settingCatch;
     private Renderer render;
@@ -22,6 +23,7 @@ public class FishngManager : MonoBehaviour
         collider = Hook.GetComponent<Collider>();
         render.enabled = false;
         collider.enabled = false;
+        Fishrod.SetActive(false);
     }
 
     // Update is called once per frame
@@ -36,6 +38,7 @@ public class FishngManager : MonoBehaviour
         settingCatch = true;
         render.enabled = true;
         collider.enabled = true;
+        Fishrod.SetActive(true);
         for (int i = 0; i < Fishs.Count; i++)
         {
             Fishs[i].SetFishng();
@@ -64,14 +67,21 @@ public class FishngManager : MonoBehaviour
     {
         PanelUI.SetActive(true);
         CurrentFish.FishingPathToMainPath();
+        for (int i = 0; i < Fishs.Count; i++)
+        {
+            //Fishs[i].SetDefaultColor();
+
+        }
     }
     public void SetOnColliderEnter(Collider other)
     {
         if (settingCatch)
         {
+            Debug.Log("FishCatch");
             settingCatch = false;
             render.enabled = false;
             collider.enabled = false;
+            Fishrod.SetActive(false);
 
             for (int i = 0; i < Fishs.Count; i++)
             {
@@ -79,13 +89,13 @@ public class FishngManager : MonoBehaviour
                 if (Fishs[i].Fish == other.gameObject)
                 {
                     CurrentFish = Fishs[i];
-                    Fishs[i].SetColorCatch();
+                   // Fishs[i].SetColorCatch();
                     Fishs[i].GoToFishingPath();
                     
                 }
                 else
                 {
-                    Fishs[i].SetColorNoCatch();
+                   // Fishs[i].SetColorNoCatch();
                     Fishs[i].BackMainPath();
                 }
 

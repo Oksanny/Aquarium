@@ -47,9 +47,9 @@ public class FishPathController : MonoBehaviour {
 
     public void SetFeedingPath()
     {
+        FeedingPath.velocityBias = Random.Range(0.15f, 0.8f);
         setDirectFeed = true;
         FeedingPath.Waypoints[0].Position = new Vector3(Fish.transform.position.x, Fish.transform.position.y, Fish.transform.position.z);
-
         MainPath.Target = null;
         FeedingPath.Target = Fish.transform;
         MainPath.Stop();
@@ -59,10 +59,9 @@ public class FishPathController : MonoBehaviour {
 
     public void SetFishng()
     {
-       
+        FeedingPath.velocityBias = Random.Range(0.15f, 0.8f);
         setDirectFishing=true;
         FeedingPath.Waypoints[0].Position = new Vector3(Fish.transform.position.x, Fish.transform.position.y, Fish.transform.position.z);
-
         MainPath.Target = null;
         FeedingPath.Target = Fish.transform;
         MainPath.Stop();
