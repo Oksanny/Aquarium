@@ -2313,7 +2313,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &193864317
 Prefab:
@@ -2958,7 +2958,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0783592eb3d74ee295618930912c851, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c0783592eb3d74ee295618930912c851, type: 3}
       propertyPath: m_LocalScale.x
@@ -2976,6 +2976,10 @@ Prefab:
       propertyPath: m_Animation
       value: 
       objectReference: {fileID: 7400004, guid: c0783592eb3d74ee295618930912c851, type: 3}
+    - target: {fileID: 100000, guid: c0783592eb3d74ee295618930912c851, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0783592eb3d74ee295618930912c851, type: 3}
   m_IsPrefabParent: 0
@@ -3028,7 +3032,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &272279019
 GameObject:
@@ -3296,7 +3300,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4706853583093950, guid: ee8f19fbaba8a45429f6f048cc16f29c, type: 2}
       propertyPath: m_RootOrder
-      value: 13
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114600039077802666, guid: ee8f19fbaba8a45429f6f048cc16f29c,
         type: 2}
@@ -8539,6 +8543,10 @@ Prefab:
     - target: {fileID: 4706853583093950, guid: ee8f19fbaba8a45429f6f048cc16f29c, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -6.7970004
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224248767490516, guid: ee8f19fbaba8a45429f6f048cc16f29c, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee8f19fbaba8a45429f6f048cc16f29c, type: 2}
@@ -21663,7 +21671,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1047736383462172, guid: e687d9184963b425395e780643c62a93, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e687d9184963b425395e780643c62a93, type: 2}
@@ -23078,7 +23086,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &631196671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27387,7 +27395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1120791111
 Transform:
   m_ObjectHideFlags: 0
@@ -32970,7 +32978,7 @@ Transform:
   m_Children:
   - {fileID: 2117958794}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1152631749
 GameObject:
@@ -33103,7 +33111,7 @@ Transform:
   - {fileID: 227698074}
   - {fileID: 538015108}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 13.676001, y: 352.92, z: 15.867001}
 --- !u!1 &1161722300
 GameObject:
@@ -33633,7 +33641,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 65caeadfa09f8244bba3d83012e33e3f, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 65caeadfa09f8244bba3d83012e33e3f, type: 2}
       propertyPath: m_IsActive
@@ -34900,7 +34908,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 62.823, y: -215.782, z: -187.452}
 --- !u!108 &1355623437
 Light:
@@ -35376,7 +35384,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 384a0d8cc71cef74a873b3353337ea2c, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 384a0d8cc71cef74a873b3353337ea2c, type: 2}
       propertyPath: m_Materials.Array.data[0]
@@ -36174,7 +36182,7 @@ Prefab:
     - target: {fileID: 224605761480814678, guid: edc1ed290cf3346cdb1a380dceeefa06,
         type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 224605761480814678, guid: edc1ed290cf3346cdb1a380dceeefa06,
         type: 2}
@@ -36214,7 +36222,7 @@ Prefab:
     - target: {fileID: 224605761480814678, guid: edc1ed290cf3346cdb1a380dceeefa06,
         type: 2}
       propertyPath: m_RootOrder
-      value: 12
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 224605761480814678, guid: edc1ed290cf3346cdb1a380dceeefa06,
         type: 2}
@@ -36467,7 +36475,7 @@ Transform:
   - {fileID: 1309219944}
   - {fileID: 562327970}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1479296829
 GameObject:
@@ -36719,7 +36727,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1511303518
 GameObject:
@@ -36760,7 +36768,7 @@ Transform:
   - {fileID: 1131796721}
   - {fileID: 1768267830}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1513540350
 GameObject:
@@ -52401,7 +52409,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: bf30d577eead1ef40bcf2b404289daf4, type: 2}
       propertyPath: m_IsActive
