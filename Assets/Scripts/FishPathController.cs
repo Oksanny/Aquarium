@@ -12,6 +12,7 @@ public class FishPathController : MonoBehaviour {
     public PathMagic BackFeedingPath;
     public PathMagic FishingPath;
     public FeedingManager feedingManager;
+    public FishngManager fishingManager;
     public bool setDirectFeed;
     public bool setDirectFishing;
     public  GameObject Hook;
@@ -43,6 +44,7 @@ public class FishPathController : MonoBehaviour {
         BackFeedingPath.Stop();
         MainPath.Play();
         feedingManager.SetReurn();
+        fishingManager.SetReurn();
     }
 
     public void SetFeedingPath()
@@ -84,10 +86,12 @@ public class FishPathController : MonoBehaviour {
 
     public void FishingPathToMainPath()
     {
+        setDirectFishing = false;
         MainPath.Target = Fish.transform;
         FishingPath.Target = null;
         FishingPath.Stop();
         MainPath.Play();
+        fishingManager.SetReurn();
     }
     public void GoToFishingPath()
     {

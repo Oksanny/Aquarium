@@ -15,6 +15,7 @@ public class FishngManager : MonoBehaviour
     private bool settingCatch;
     private Renderer render;
     private Collider collider;
+    private int countReturn;
     // Use this for initialization
     void Start()
     {
@@ -24,6 +25,10 @@ public class FishngManager : MonoBehaviour
         render.enabled = false;
         collider.enabled = false;
         Fishrod.SetActive(false);
+        for (int i = 0; i < Fishs.Count; i++)
+        {
+            Fishs[i].fishingManager = this;
+        }
     }
 
     // Update is called once per frame
@@ -45,6 +50,14 @@ public class FishngManager : MonoBehaviour
         }
         PanelUI.SetActive(false);
 
+    }
+    public void SetReurn()
+    {
+        countReturn++;
+        if (countReturn == Fishs.Count)
+        {
+            PanelUI.SetActive(true);
+        }
     }
     void SelectPath()
     {
