@@ -1,0 +1,663 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1047736383462172}
+  m_IsPrefabParent: 1
+--- !u!1 &1017554295528308
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4660595460946884}
+  - component: {fileID: 114875915710792740}
+  m_Layer: 0
+  m_Name: FishingPath_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1047736383462172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4316351825738742}
+  - component: {fileID: 114474453487538610}
+  m_Layer: 0
+  m_Name: FishingManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1588031394715302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4516759816614924}
+  - component: {fileID: 114195900698115000}
+  m_Layer: 0
+  m_Name: FishingPath_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1847093984529534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4324902453465100}
+  - component: {fileID: 114021560465879876}
+  m_Layer: 0
+  m_Name: FishingPath_2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1927362983501870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4278335448425288}
+  - component: {fileID: 114493508109611804}
+  m_Layer: 0
+  m_Name: FishingPath_3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1931577500152072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4641564343363546}
+  - component: {fileID: 33400223393748396}
+  - component: {fileID: 65589961296075614}
+  - component: {fileID: 23760318021170908}
+  - component: {fileID: 114810574063380502}
+  m_Layer: 0
+  m_Name: Hook
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4278335448425288
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1927362983501870}
+  m_LocalRotation: {x: -0, y: -0.999994, z: -0, w: 0.003490679}
+  m_LocalPosition: {x: -109.8, y: -244.875, z: -443.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4316351825738742}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -179.6, z: 0}
+--- !u!4 &4316351825738742
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1047736383462172}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 107.5, y: 244.875, z: 8.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4516759816614924}
+  - {fileID: 4324902453465100}
+  - {fileID: 4278335448425288}
+  - {fileID: 4660595460946884}
+  - {fileID: 4641564343363546}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4324902453465100
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1847093984529534}
+  m_LocalRotation: {x: -0, y: -0.71079946, z: -0, w: 0.7033948}
+  m_LocalPosition: {x: -318.2, y: -244.875, z: -234.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4316351825738742}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -90.6, z: 0}
+--- !u!4 &4516759816614924
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1588031394715302}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -107.5, y: -244.875, z: -8.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4316351825738742}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4641564343363546
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1931577500152072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -107, y: 230, z: -231}
+  m_LocalScale: {x: 27.30112, y: 27.301119, z: 27.301119}
+  m_Children: []
+  m_Father: {fileID: 4316351825738742}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4660595460946884
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017554295528308}
+  m_LocalRotation: {x: -0, y: -0.7126386, z: -0, w: -0.7015313}
+  m_LocalPosition: {x: 115.5, y: -244.875, z: -237.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4316351825738742}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -269.1, z: 0}
+--- !u!23 &23760318021170908
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1931577500152072}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: f545a47f7464f664eafd7eb3aae38064, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33400223393748396
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1931577500152072}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65589961296075614
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1931577500152072}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114021560465879876
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1847093984529534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9553121615fd34b3eb74d198e87f0e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathColor: {r: 1, g: 1, b: 1, a: 1}
+  waypoints:
+  - position: {x: 40.71857, y: 464.5, z: -218.5714}
+    rotation: {x: -0, y: 90.100006, z: 0}
+    lookAt: {fileID: 0}
+    inTangent: {x: -0.99999857, y: 0, z: 0.0017455085}
+    outTangent: {x: 0.99999857, y: 0, z: -0.0017455085}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 0
+    outVariation: 0
+    reached:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: 332.61163, y: 674.2401, z: -219.08086}
+    rotation: {x: -0, y: 90.100006, z: 0}
+    lookAt: {fileID: 0}
+    inTangent: {x: -0.99999845, y: 0, z: 0.0017453891}
+    outTangent: {x: 0.99999845, y: 0, z: -0.0017453891}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 0
+    outVariation: 0
+    reached:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: 790.81744, y: 464.5, z: -219.88062}
+    rotation: {x: -0, y: 90.100006, z: 0}
+    lookAt: {fileID: 0}
+    inTangent: {x: -1, y: 0, z: 0.001739502}
+    outTangent: {x: 1, y: -0, z: -0.001739502}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 0
+    outVariation: 0
+    reached:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114474453487538610}
+          m_MethodName: GoToMainPath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  target: {fileID: 0}
+  disableOrientation: 0
+  globalLookAt: {fileID: 0}
+  globalFollowPath: 1
+  globalFollowPathBias: 0.001
+  updateMode: 0
+  loop: 0
+  autoStart: 0
+  velocityBias: 0.1
+  currentPos: 0
+  isPlaying: 0
+  waypointChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Jacovone.PathMagic+WaypointChangedEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  presampledPath: 0
+  samplesNum: 100
+  positionSamples: []
+  rotationSamples: []
+  velocitySamples: []
+  waypointSamples: 
+  samplesDistances: []
+  totalDistance: 0
+  updateTransform: 1
+--- !u!114 &114195900698115000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1588031394715302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9553121615fd34b3eb74d198e87f0e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathColor: {r: 1, g: 1, b: 1, a: 1}
+  waypoints:
+  - position: {x: 41.1, y: 464.5, z: -218.5}
+    rotation: {x: -0, y: 90, z: 0}
+    lookAt: {fileID: 0}
+    inTangent: {x: -1.0000001, y: 0, z: 0.00000011920929}
+    outTangent: {x: 1.0000001, y: 0, z: -0.00000011920929}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 0
+    outVariation: 0
+    reached:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: 332.99353, y: 674.2401, z: -218.49998}
+    rotation: {x: -0, y: 90, z: 0}
+    lookAt: {fileID: 0}
+    inTangent: {x: -1, y: 0, z: 0}
+    outTangent: {x: 1, y: -0, z: -0}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 0
+    outVariation: 0
+    reached:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: 791.2, y: 464.5, z: -218.5}
+    rotation: {x: -0, y: 90, z: 0}
+    lookAt: {fileID: 0}
+    inTangent: {x: -1, y: 0, z: 0}
+    outTangent: {x: 1, y: -0, z: -0}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 0
+    outVariation: 0
+    reached:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114474453487538610}
+          m_MethodName: GoToMainPath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  target: {fileID: 0}
+  disableOrientation: 0
+  globalLookAt: {fileID: 0}
+  globalFollowPath: 1
+  globalFollowPathBias: 0.001
+  updateMode: 0
+  loop: 0
+  autoStart: 0
+  velocityBias: 0.1
+  currentPos: 0
+  isPlaying: 0
+  waypointChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Jacovone.PathMagic+WaypointChangedEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  presampledPath: 0
+  samplesNum: 100
+  positionSamples: []
+  rotationSamples: []
+  velocitySamples: []
+  waypointSamples: 
+  samplesDistances: []
+  totalDistance: 0
+  updateTransform: 1
+--- !u!114 &114474453487538610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1047736383462172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e82d6e171da7bf41bee46597efcda35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fishs:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  CurrentFish: {fileID: 0}
+  FishingPaths:
+  - {fileID: 114195900698115000}
+  - {fileID: 114021560465879876}
+  - {fileID: 114493508109611804}
+  - {fileID: 114875915710792740}
+  CurrentPath: {fileID: 0}
+  Hook: {fileID: 1931577500152072}
+  PanelUI: {fileID: 0}
+--- !u!114 &114493508109611804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1927362983501870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9553121615fd34b3eb74d198e87f0e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathColor: {r: 1, g: 1, b: 1, a: 1}
+  waypoints:
+  - position: {x: 40.71857, y: 464.5, z: -218.5714}
+    rotation: {x: -0, y: 90.100006, z: 0}
+    lookAt: {fileID: 0}
+    inTangent: {x: -0.99999857, y: 0, z: 0.0017455085}
+    outTangent: {x: 0.99999857, y: 0, z: -0.0017455085}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 0
+    outVariation: 0
+    reached:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: 332.61163, y: 674.2401, z: -219.08086}
+    rotation: {x: -0, y: 90.100006, z: 0}
+    lookAt: {fileID: 0}
+    inTangent: {x: -0.99999845, y: 0, z: 0.0017453891}
+    outTangent: {x: 0.99999845, y: 0, z: -0.0017453891}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 0
+    outVariation: 0
+    reached:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: 790.81744, y: 464.5, z: -219.88062}
+    rotation: {x: -0, y: 90.100006, z: 0}
+    lookAt: {fileID: 0}
+    inTangent: {x: -1, y: 0, z: 0.001739502}
+    outTangent: {x: 1, y: -0, z: -0.001739502}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 0
+    outVariation: 0
+    reached:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114474453487538610}
+          m_MethodName: GoToMainPath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  target: {fileID: 0}
+  disableOrientation: 0
+  globalLookAt: {fileID: 0}
+  globalFollowPath: 1
+  globalFollowPathBias: 0.001
+  updateMode: 0
+  loop: 0
+  autoStart: 0
+  velocityBias: 0.1
+  currentPos: 0
+  isPlaying: 0
+  waypointChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Jacovone.PathMagic+WaypointChangedEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  presampledPath: 0
+  samplesNum: 100
+  positionSamples: []
+  rotationSamples: []
+  velocitySamples: []
+  waypointSamples: 
+  samplesDistances: []
+  totalDistance: 0
+  updateTransform: 1
+--- !u!114 &114810574063380502
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1931577500152072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a21636d8a8ce7424db57893da60bb2e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FishingManager: {fileID: 114474453487538610}
+--- !u!114 &114875915710792740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1017554295528308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9553121615fd34b3eb74d198e87f0e43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pathColor: {r: 1, g: 1, b: 1, a: 1}
+  waypoints:
+  - position: {x: 40.71857, y: 464.5, z: -218.5714}
+    rotation: {x: -0, y: 90.100006, z: 0}
+    lookAt: {fileID: 0}
+    inTangent: {x: -0.99999857, y: 0, z: 0.0017455085}
+    outTangent: {x: 0.99999857, y: 0, z: -0.0017455085}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 0
+    outVariation: 0
+    reached:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: 332.61163, y: 674.2401, z: -219.08086}
+    rotation: {x: -0, y: 90.100006, z: 0}
+    lookAt: {fileID: 0}
+    inTangent: {x: -0.99999845, y: 0, z: 0.0017453891}
+    outTangent: {x: 0.99999845, y: 0, z: -0.0017453891}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 0
+    outVariation: 0
+    reached:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  - position: {x: 790.81744, y: 464.5, z: -219.88062}
+    rotation: {x: -0, y: 90.100006, z: 0}
+    lookAt: {fileID: 0}
+    inTangent: {x: -1, y: 0, z: 0.001739502}
+    outTangent: {x: 1, y: -0, z: -0.001739502}
+    symmetricTangents: 1
+    velocity: 1
+    inVariation: 0
+    outVariation: 0
+    reached:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114474453487538610}
+          m_MethodName: GoToMainPath
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: Jacovone.Waypoint+ReachedEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  target: {fileID: 0}
+  disableOrientation: 0
+  globalLookAt: {fileID: 0}
+  globalFollowPath: 1
+  globalFollowPathBias: 0.001
+  updateMode: 0
+  loop: 0
+  autoStart: 0
+  velocityBias: 0.1
+  currentPos: 0
+  isPlaying: 0
+  waypointChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Jacovone.PathMagic+WaypointChangedEvent, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  presampledPath: 0
+  samplesNum: 100
+  positionSamples: []
+  rotationSamples: []
+  velocitySamples: []
+  waypointSamples: 
+  samplesDistances: []
+  totalDistance: 0
+  updateTransform: 1
