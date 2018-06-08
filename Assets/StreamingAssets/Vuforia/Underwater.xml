@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="marker" size="10.000000 5.684210" />
-    <ImageTarget name="test" size="10.000000 4.332248" />
-    <ImageTarget name="fish1" size="10.000000 5.630573" />
+    <ImageTarget name="Marker_Puzzle" size="10.000000 5.625000" />
   </Tracking>
 </QCARConfig>
