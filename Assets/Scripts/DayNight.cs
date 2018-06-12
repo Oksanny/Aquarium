@@ -24,6 +24,19 @@ public class DayNight : MonoBehaviour {
     public void LightingDay()
     {
         if(dayTime=="Day"){
+            sideAquarium.color = new Color(0.08419366f, 0.2571645f, 0.4150943f, 0.6235294f);
+            water.color = new Color(0, 0, 0, 0.3215686f);
+        DayLight.SetActive(false);
+            for (int i = 0; i < NightLights.Length; i++)
+            {
+                NightLights[i].SetActive(true);
+            }
+            DayNightButton.text = "Night";
+            dayTime= "Night";
+            Debug.Log("Day");
+        }
+        else{
+          
             sideAquarium.color = new Color(0, 0.5372549f, 1f, 0.3058824f);
             water.color = new Color(0, 0, 0, 0);
             DayLight.SetActive(true);
@@ -31,19 +44,7 @@ public class DayNight : MonoBehaviour {
             {
                 NightLights[i].SetActive(false);
             }
-            DayNightButton.text = "Night";
-            dayTime= "Night";
-            Debug.Log("Day");
-        }
-        else{
-            sideAquarium.color = new Color(0.08419366f, 0.2571645f, 0.4150943f, 0.6235294f);
-            water.color = new Color(0, 0, 0, 0.3215686f);
 
-            DayLight.SetActive(false);
-            for (int i = 0; i < NightLights.Length; i++)
-            {
-                NightLights[i].SetActive(true);
-            }
             DayNightButton.text = "Day";
             dayTime = "Day";
             Debug.Log("Night");

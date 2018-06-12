@@ -85,7 +85,8 @@ public class FeedPathController : MonoBehaviour
                     render.enabled = false;
                     collider.enabled = false;
                     Fishs[i].SetColorCatch();
-                    
+                    Fishs[i].Fish.GetComponent<Animation>().PlayQueued("Dancing", QueueMode.PlayNow);
+                    Debug.Log("dancing");
                 }
                 else
                 {

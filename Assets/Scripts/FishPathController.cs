@@ -47,6 +47,7 @@ public class FishPathController : MonoBehaviour {
 
     public void SetDefaultState()
     {
+        Fish.GetComponent<Animation>().PlayQueued("Moving", QueueMode.PlayNow);
         statePath = StatePath.Fish;
         MainPath.Target = Fish.transform;
         BackFeedingPath.Target = null;
@@ -58,6 +59,7 @@ public class FishPathController : MonoBehaviour {
     }
     public void SetMainPath()
     {
+        Fish.GetComponent<Animation>().PlayQueued("Moving", QueueMode.PlayNow);
         statePath = StatePath.Fish;
         MainPath.Target = Fish.transform;
         BackFeedingPath.Target = null;
