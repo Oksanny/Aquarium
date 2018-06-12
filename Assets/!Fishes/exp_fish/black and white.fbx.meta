@@ -19,6 +19,21 @@ ModelImporter:
     100026: Group003
     100028: Group004
     100030: Object040
+    100032: Bone013
+    100034: Bone014
+    100036: Bone015
+    100038: Bone016
+    100040: Bone017
+    100042: Bone018
+    100044: Bone019
+    100046: Bone020
+    100048: Bone021
+    100050: Bone311
+    100052: Bone312
+    100054: Bone313
+    100056: Group044
+    100058: Group045
+    100060: Object039
     400000: //RootNode
     400002: Bone086
     400004: Bone087
@@ -35,16 +50,34 @@ ModelImporter:
     400026: Group003
     400028: Group004
     400030: Object040
+    400032: Bone013
+    400034: Bone014
+    400036: Bone015
+    400038: Bone016
+    400040: Bone017
+    400042: Bone018
+    400044: Bone019
+    400046: Bone020
+    400048: Bone021
+    400050: Bone311
+    400052: Bone312
+    400054: Bone313
+    400056: Group044
+    400058: Group045
+    400060: Object039
     2100000: lambert2
     2100002: 18 - Defaultfhr
+    2100004: 22 - Defaultgg
     2300000: Object040
     3300000: Object040
     4300000: Object040
+    4300002: Object039
     7400000: Moving
     7400002: Dancing
     9500000: //RootNode
     11100000: //RootNode
     13700000: Object040
+    13700002: Object039
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
@@ -70,6 +103,7 @@ ModelImporter:
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
+    importConstraints: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
@@ -110,7 +144,7 @@ ModelImporter:
       name: Dancing
       takeName: Take 001
       firstFrame: 21
-      lastFrame: 60
+      lastFrame: 90
       wrapMode: 2
       orientationOffsetY: 0
       level: 0
