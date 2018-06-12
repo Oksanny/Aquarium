@@ -3,6 +3,13 @@ using System.Collections.Generic;
 using Jacovone;
 using UnityEngine;
 
+public enum StatePath
+{
+    Fish,
+    Feed,
+    Fishing,
+    BackFeeding
+}
 public class FishPathController : MonoBehaviour {
 
     public GameObject Fish;
@@ -16,11 +23,13 @@ public class FishPathController : MonoBehaviour {
     public bool setDirectFeed;
     public bool setDirectFishing;
     public  GameObject Hook;
+    public StatePath statePath;
     // Use this for initialization
     void Start()
     {
         BackFeedingPath.Waypoints[1].position =
             new Vector3(MainPath.Waypoints[0].position.x, MainPath.Waypoints[0].position.y, MainPath.Waypoints[0].position.z);
+        statePath=StatePath.Fish;
     }
 
     // Update is called once per frame
@@ -36,15 +45,33 @@ public class FishPathController : MonoBehaviour {
         }
     }
 
+    public void SetDefaultState()
+    {
+        statePath = StatePath.Fish;
+        MainPath.Target = Fish.transform;
+        BackFeedingPath.Target = null;
+        BackFeedingPath.Stop();
+        FeedingPath.Target = null;
+        FeedingPath.Stop();
+        SetDefaultColor();
+        MainPath.Play();
+    }
     public void SetMainPath()
     {
-
+        statePath = StatePath.Fish;
         MainPath.Target = Fish.transform;
         BackFeedingPath.Target = null;
         BackFeedingPath.Stop();
         MainPath.Play();
-        feedingManager.SetReurn();
-        fishingManager.SetReurn();
+        if (feedingManager.stateFeeding==FeedingManager.StateFeed.Feeding)
+        {
+            feedingManager.SetReurn();
+        }
+        if (fishingManager.stateFishing == FishngManager.StateFishing.Fishing)
+        {
+            fishingManager.SetReurn();
+        }
+        
     }
 
     public void SetFeedingPath()
@@ -57,6 +84,7 @@ public class FishPathController : MonoBehaviour {
         MainPath.Stop();
 
         FeedingPath.Play();
+        statePath = StatePath.Feed;
     }
 
     public void SetFishng()
@@ -69,6 +97,7 @@ public class FishPathController : MonoBehaviour {
         MainPath.Stop();
 
         FeedingPath.Play();
+        statePath = StatePath.Feed;
     }
     public void BackMainPath()
     {
@@ -79,7 +108,7 @@ public class FishPathController : MonoBehaviour {
         BackFeedingPath.Target = Fish.transform;
         FeedingPath.Stop();
         BackFeedingPath.Play();
-        
+        statePath = StatePath.BackFeeding;
       
 
     }
@@ -91,6 +120,7 @@ public class FishPathController : MonoBehaviour {
         FishingPath.Target = null;
         FishingPath.Stop();
         MainPath.Play();
+        statePath = StatePath.Fish;
         fishingManager.SetReurn();
     }
     public void GoToFishingPath()
@@ -99,6 +129,7 @@ public class FishPathController : MonoBehaviour {
         FishingPath.Target = Fish.transform;
         FeedingPath.Stop();
         FishingPath.Play();
+        statePath = StatePath.Fishing;
     }
     public void SetColorCatch()
     {

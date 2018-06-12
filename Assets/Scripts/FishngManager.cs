@@ -2,9 +2,19 @@
 using System.Collections.Generic;
 using Jacovone;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FishngManager : MonoBehaviour
 {
+    public enum StateFishing
+    {
+        Fishing,
+        NoNFishing
+    }
+
+    public List<GameObject> UI_Fishing;
+    public List<GameObject> UI_NoNFishing;
+    public Text textMode;
     public List<FishPathController> Fishs;
     public FishPathController CurrentFish;
     public List<PathMagic> FishingPaths;
@@ -16,9 +26,11 @@ public class FishngManager : MonoBehaviour
     private Renderer render;
     private Collider collider;
     private int countReturn;
+    public StateFishing stateFishing;
     // Use this for initialization
     void Start()
     {
+        stateFishing = StateFishing.NoNFishing;
         SelectPath();
         render = Hook.GetComponent<Renderer>();
         collider = Hook.GetComponent<Collider>();
@@ -37,8 +49,47 @@ public class FishngManager : MonoBehaviour
         CurrentPath.Waypoints[0].Position = new Vector3(Hook.transform.position.x, Hook.transform.position.y, Hook.transform.position.z);
     }
 
+    public void Fishing()
+    {
+        switch (stateFishing)
+        {
+            case StateFishing.Fishing:
+                stateFishing = StateFishing.NoNFishing;
+                for (int i = 0; i < UI_NoNFishing.Count; i++)
+                {
+                    UI_NoNFishing[i].SetActive(true);
+                }
+
+                textMode.text = "Fising";
+                StopFishing();
+                break;
+            case StateFishing.NoNFishing:
+                stateFishing = StateFishing.Fishing;
+                for (int i = 0; i < UI_NoNFishing.Count; i++)
+                {
+                    UI_NoNFishing[i].SetActive(false);
+                }
+
+                textMode.text = "Stop Fising";
+                StartFishing();
+                break;
+        }
+    }
+
+    void StopFishing()
+    {
+        settingCatch = false;
+        render.enabled = false;
+        collider.enabled = false;
+        Fishrod.SetActive(false);
+        for (int i = 0; i < Fishs.Count; i++)
+        {
+            Fishs[i].SetDefaultState();
+        }
+    }
     public void StartFishing()
     {
+        countReturn = 0;
         SelectPath();
         settingCatch = true;
         render.enabled = true;
@@ -48,16 +99,30 @@ public class FishngManager : MonoBehaviour
         {
             Fishs[i].SetFishng();
         }
-        PanelUI.SetActive(false);
+        //PanelUI.SetActive(false);
 
     }
     public void SetReurn()
     {
         countReturn++;
+        Debug.Log("Current=" + countReturn);
         if (countReturn == Fishs.Count)
         {
-            PanelUI.SetActive(true);
+            //PanelUI.SetActive(true);
+            if (stateFishing == StateFishing.Fishing)
+            {
+                StartCoroutine(RepeatStart());
+            }
+
         }
+    }
+
+    IEnumerator RepeatStart()
+    {
+        float interval = Random.Range(0, 0.9f);
+        Debug.Log(interval);
+        yield return new WaitForSeconds(interval);
+        StartFishing();
     }
     void SelectPath()
     {
@@ -78,7 +143,7 @@ public class FishngManager : MonoBehaviour
 
     public void GoToMainPath()
     {
-        PanelUI.SetActive(true);
+        //PanelUI.SetActive(true);
         CurrentFish.FishingPathToMainPath();
         for (int i = 0; i < Fishs.Count; i++)
         {
@@ -88,27 +153,46 @@ public class FishngManager : MonoBehaviour
     }
     public void SetOnColliderEnter(Collider other)
     {
-        if (settingCatch)
+        bool checkPath = false;
+        for (int i = 0; i < Fishs.Count; i++)
         {
-            Debug.Log("FishCatch");
-            settingCatch = false;
-            render.enabled = false;
-            collider.enabled = false;
-            Fishrod.SetActive(false);
+
+            if (Fishs[i].Fish == other.gameObject)
+            {
+                if (Fishs[i].statePath == StatePath.Feed)
+                {
+                    checkPath = true;
+                }
+
+
+            }
+
+
+
+        }
+        if (checkPath && settingCatch)
+        {
+
 
             for (int i = 0; i < Fishs.Count; i++)
             {
 
                 if (Fishs[i].Fish == other.gameObject)
                 {
+                    Debug.Log("FishCatch=" + Fishs[i].statePath);
                     CurrentFish = Fishs[i];
-                   // Fishs[i].SetColorCatch();
+                    // Fishs[i].SetColorCatch();
                     Fishs[i].GoToFishingPath();
-                    
+
+                    settingCatch = false;
+                    render.enabled = false;
+                    collider.enabled = false;
+                    Fishrod.SetActive(false);
+
                 }
                 else
                 {
-                   // Fishs[i].SetColorNoCatch();
+                    // Fishs[i].SetColorNoCatch();
                     Fishs[i].BackMainPath();
                 }
 

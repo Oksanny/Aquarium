@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class CheckExitFromAquarium : MonoBehaviour
 {
+    public AudioSource audioClip;
     public GameObject Spalsh;
 	// Use this for initialization
-	void Start () {
-		
+	void Start ()
+	{
+	    audioClip = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -19,6 +21,7 @@ public class CheckExitFromAquarium : MonoBehaviour
         Spalsh.SetActive(false);
         Spalsh.transform.position=new Vector3(other.gameObject.transform.position.x,gameObject.transform .position.y,other.gameObject.transform.position.z);
         Spalsh.SetActive(true);
+        audioClip.Play();
 
     }
 }

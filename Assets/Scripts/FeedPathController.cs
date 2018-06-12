@@ -31,8 +31,17 @@ public class FeedPathController : MonoBehaviour
         Fishs.Add(fishController);
         fishController.Feed = Feed;
     }
+
+    public void StopFeed()
+    {
+        settingCatch = false;
+        render.enabled = false;
+        collider.enabled = true;
+        pathFeed.Stop();
+    }
     public void StartFeed()
     {
+        Debug.Log("Start Feeding");
         settingCatch = true;
         render.enabled = true;
         collider.enabled = true;
@@ -45,18 +54,36 @@ public class FeedPathController : MonoBehaviour
     }
     public void SetOnColliderEnter(Collider other)
     {
-        if (settingCatch)
+        bool checkPath = false;
+        for (int i = 0; i < Fishs.Count; i++)
         {
-            settingCatch = false;
-            Debug.Log("Collisio");
-            render.enabled = false;
-            collider.enabled = false;
+
+            if (Fishs[i].Fish == other.gameObject)
+            {
+                if (Fishs[i].statePath == StatePath.Feed)
+                {
+                    checkPath = true;
+                }
+
+
+            }
+
+
+
+        }
+        if (checkPath&&settingCatch)
+        {
+            
 
             for (int i = 0; i < Fishs.Count; i++)
             {
                 Fishs[i].BackMainPath();
                 if (Fishs[i].Fish == other.gameObject)
                 {
+                    settingCatch = false;
+                    Debug.Log("Collisio");
+                    render.enabled = false;
+                    collider.enabled = false;
                     Fishs[i].SetColorCatch();
                     
                 }
